@@ -17,24 +17,24 @@ public class TextController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		print (myState);
-		if (myState == States.office_0) 			{state_office_0();}
+		if (myState == States.office_0) 		{state_office_0();}
 		else if (myState == States.office_1) 		{state_office_1();}
-		else if (myState == States.annex_0)			{state_annex_0();}
+		else if (myState == States.annex_0)		{state_annex_0();}
 		else if (myState == States.accounting_0) 	{state_accounting_0();}
 		else if (myState == States.entrance_0) 		{state_entrance_0();}
-		else if (myState == States.kevin)			{state_kevin();}
-		else if (myState == States.oscar)			{state_oscar();}
-		else if (myState == States.angela)			{state_angela();}
-		else if (myState == States.ceiling)			{state_ceiling();}
-		else if (myState == States.annex_1)			{state_annex_1();}
+		else if (myState == States.kevin)		{state_kevin();}
+		else if (myState == States.oscar)		{state_oscar();}
+		else if (myState == States.angela)		{state_angela();}
+		else if (myState == States.ceiling)		{state_ceiling();}
+		else if (myState == States.annex_1)		{state_annex_1();}
 		else if (myState == States.bathroom_0)		{state_bathroom_0();}
 		else if (myState == States.entrance_1)		{state_entrance_1();}
-		else if (myState == States.drawer)			{state_drawer();}
-		else if (myState == States.scroll)			{state_scroll();}
+		else if (myState == States.drawer)		{state_drawer();}
+		else if (myState == States.scroll)		{state_scroll();}
 		else if (myState == States.entrance_2) 		{state_entracnce_2();}
-		else if (myState == States.cushion)			{state_cushion();}
+		else if (myState == States.cushion)		{state_cushion();}
 		else if (myState == States.bathroom_1)		{state_bathroom_1();}
-		else if (myState == States.bag)				{state_bag();}
+		else if (myState == States.bag)			{state_bag();}
 		else if (myState == States.warehouse)		{state_warehouse();}	
 			
 	}
@@ -47,7 +47,7 @@ public class TextController : MonoBehaviour {
 	void state_office_1 () {
 		text.text = "Press X to go to the Annex, A to go to Accounting, " +
 					"E to go to the Entrance.";
-		if (Input.GetKeyDown(KeyCode.X))		{myState = States.annex_0;}
+		if (Input.GetKeyDown(KeyCode.X))	{myState = States.annex_0;}
 		else if (Input.GetKeyDown(KeyCode.A))	{myState = States.accounting_0;}
 		else if (Input.GetKeyDown(KeyCode.E))	{myState = States.entrance_0;}
 	}
@@ -60,7 +60,7 @@ public class TextController : MonoBehaviour {
 	
 	void state_accounting_0 () {
 		text.text = "Press K for Kevin's Desk, O for Oscar's, A for Angela's";
-		if (Input.GetKeyDown(KeyCode.K)) 		{myState = States.kevin;}
+		if (Input.GetKeyDown(KeyCode.K)) 	{myState = States.kevin;}
 		else if (Input.GetKeyDown(KeyCode.O)) 	{myState = States.oscar;}
 		else if (Input.GetKeyDown(KeyCode.A))	{myState = States.angela;}
 	}
@@ -89,7 +89,7 @@ public class TextController : MonoBehaviour {
 		text.text = "You've found a key! It has a tag with the letter X " +
 					"written on it. What could that mean?\n\n" +
 					"Press X to visit the annex, B to the bathroom, or E to visit the Entrance";
-		if (Input.GetKeyDown(KeyCode.X))		{myState = States.annex_1;}
+		if (Input.GetKeyDown(KeyCode.X))	{myState = States.annex_1;}
 		else if (Input.GetKeyDown(KeyCode.B)) 	{myState = States.bathroom_0;}
 		else if (Input.GetKeyDown(KeyCode.E)) 	{myState = States.entrance_1;}	
 	}
