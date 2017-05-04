@@ -6,7 +6,7 @@ public class TextController : MonoBehaviour {
 
 	public Text text;
 	private enum States {office_0,office_1,annex_0, accounting_0,entrance_0, kevin, oscar, angela, ceiling, annex_1,
-						bathroom_0, entrance_1, drawer, scroll, entrance_2, cushion, bathroom_1, bag, warehouse};
+				bathroom_0, entrance_1, drawer, scroll, entrance_2, cushion, bathroom_1, bag, warehouse};
 	private States myState;
 	
 	// Use this for initialization
